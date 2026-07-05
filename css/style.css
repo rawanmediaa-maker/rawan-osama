@@ -1170,6 +1170,37 @@ html[lang="ar"] .category-showcase {
         display: none;
     }
 
+    /* ── Header: group lang-selector + theme-toggle neatly ── */
+    .header-container {
+        flex-wrap: nowrap;
+        gap: 0.75rem;
+    }
+
+    .logo {
+        font-size: 1.1rem;
+        flex-shrink: 0;
+    }
+
+    /* Wrap the two controls so they sit together */
+    .lang-selector {
+        margin-inline-start: 0;
+        flex-shrink: 0;
+    }
+
+    .lang-btn {
+        width: 108px;
+        height: 38px;
+        font-size: 0.78rem;
+        padding: 0 0.75rem;
+    }
+
+    .theme-toggle {
+        flex-shrink: 0;
+        width: 38px;
+        height: 38px;
+    }
+
+    /* ── Hero ── */
     .hero-container {
         grid-template-columns: 1fr;
         text-align: center;
@@ -1208,6 +1239,35 @@ html[lang="ar"] .category-showcase {
         align-items: center;
         text-align: center;
     }
+
+    /* ── Project folder cards: fit full width on mobile ── */
+    .folder-preview-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 1.5rem 1.25rem 1.75rem;
+    }
+
+    .folder-preview-image {
+        height: 180px;
+    }
+
+    .folder-title {
+        font-size: 1.65rem;
+    }
+
+    .folder-desc {
+        font-size: 0.95rem;
+    }
+
+    .stories-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .sub-folders-menu {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1231,6 +1291,17 @@ html[lang="ar"] .category-showcase {
     .hero-cta {
         flex-direction: column;
         gap: 0;
+    }
+
+    /* Extra-small screens: make lang button even more compact */
+    .lang-btn {
+        width: 90px;
+        font-size: 0.72rem;
+        padding: 0 0.5rem;
+    }
+
+    .header-container {
+        gap: 0.5rem;
     }
 }
 
